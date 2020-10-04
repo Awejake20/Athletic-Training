@@ -1,34 +1,39 @@
 <html>
     <head>
         <title>Jake Pfaller CSC 160 Project</title>
+        <link href="../css/olympians.css" rel="stylesheet"/>
     </head>
     <body>
         <h1>The Optimal Body Type of Olympic Runners</h1>
-        <p>The shape and size of an athlete's body can vary greatly depending on the sport. For example, good basketball players are usually tall. Even point guards at the professional level are at least 6'2" or taller. And to have any success as a lineman in American football, you need to definitely be over 200 pounds at the high school level, and at least 300 pounds at the professional level. Our goal is to provide this same analysis for track runners. We'll look at the height and weight data from Olympic finalists, who should theoretically have the optimal body type for their respective events, and will hopefully find some trends in the data. Also note that the data presented is only from male athletes.
-        </p>
-        <img src="../Images/Track%20Olympian%20Height%20by%20Event.svg"/>
-        <p>Here we see a box plot for the height data of Olympic finalists, where the data was taken from the Rio Oympics. The box indicates the mean of the event plus or minus one standard deviation, and the smaller sticks show the distance to the maximum and minimum values for the event. Looking at this height data, no trend seems to emerge very obviously. It might appear as if the heights are trending down as the events go up in distance, but there is too much overlapping to make any statistical conclusions visually.
-        </p>
-        <img src="../Images/Track%20Olympian%20Weight%20by%20Event.svg"/>
-        <p>In the weight data, however, we definitely see a trend start to emerge. In the sprinting events (distance 400 meters and under) the data appears to be pretty even. Once we move into the middle distance and distance events, we start to see the average weight of these runners decrease. Where we saw some sprinters even reach over 200 pounds, we see the distance runners reach as low as 104 pounds.
-        </p>
-        <img src="../Images/Track%20Olympian%20Weight%20to%20Height%20Ratio.svg"/>
-        <p>One flaw in drawing conclusions from just the first two graphs is that we know weight and height are proportional. That is, a taller person is likely to weight more as well. Thus the best metric for drawing conclusions in this case is to look at the athletes' weight to height ratio, as this normalizes the data. In the graph above, we see the same trend as in the weight data. We see that distance runners on average hold less weight per inch than sprinters, and there could be many reasons for this. It could be as simple as it's easier for distance runners to run longer since they are carrying less weight. Or the cause could be as complicated as sprinters need more muscle mass because they recruit more anaerobic fast twitch muscle fibers, and distance runners' muscles are simply more efficient aerobic metabolizers to avoid lactic acid build up over time. We won't speculate on causation here, but we can notice a correlation between the distance of the event and the optimal height/weight ratio.
-        </p>
-        <p>Another thing we can look at is the height and weight of the athletes versus how they finished in their events. That is, if the body type is an indicator of how the athlete will do in the event, we should see a strong correlation coefficient with the data trending towards the optimal weight/height ratio.
-        </p>
-        <img src="../Images/100M%20Weight_Height%20Ratio%20vs%20Result%20(1).svg"/>
-        <img src="../Images/110M%20Hurdles%20Weight_Height%20Ratio%20vs%20Result.svg"/>
-        <img src="../Images/200M%20Weight_Height%20Ratio%20vs%20Result.svg"/>
-        <img src="../Images/400M%20Weight_Height%20Ratio%20vs%20Result.svg"/>
-        <img src="../Images/400M%20Hurdles%20Weight_Height%20Ratio%20vs%20Result.svg"/>
-        <img src="../Images/800M%20Weight_Height%20Ratio%20vs%20Result.svg"/>
-        <img src="../Images/1500M%20Weight_Height%20Ratio%20vs%20Result.svg"/>
-        <img src="../Images/3000M%20Steeplechase%20Weight_Height%20Ratio%20vs%20Result.svg"/>
-        <img src="../Images/5000M%20Weight_Height%20Ratio%20vs%20Result.svg"/>
-        <img src="../Images/10000M%20Weight_Height%20Ratio%20vs%20Result.svg"/>
-        <p>For each of the events above, we don't really see a strong trend that indicates the ratios are converging to a certain value. Each of the regression lines has a low r-squared value, even reaching zero for the 5000m. However, the fact that we don't see a trend here could be because the data is focused on Olympic finalists, who should already have the optimal body. If we could expand our dataset to include high school athletes and college athletes from all divisions, we would have a larger domain of data with greater variation in the range of weight/height ratios. Here we could probably see clearly a trend in the data converging to a certain value, if there is one. Right now our data is to narrow to conclude a correlation in the weight/height ratio and the success in the event. We can still conclude a correlation between the event and the optimal weight/height ratio from the first set of graphs.
-        </p>
-        <a href="data.html">Data Sources</a>
+        
+        <div id="events">
+            <button id="one">100 Meter Dash</button>
+            <button id="two">110 Meter Hurdles</button>
+            <button id="three">200 Meter Dash</button>
+            <button id="four">400 Meter Dash</button>
+            <button id="five">400 Meter Hurdles</button>
+            <button id="six">800 Meter Run</button>
+            <button id="seven">1500 Meter Run</button>
+            <button id="eight">3000 Meter Steeplechase</button>
+            <button id="nine">5000 Meter Run</button>
+            <button id="ten">10000 Meter Run</button>
+        </div>
+        
+        <div id="scatter">
+            <svg></svg>
+        </div>
+        
+        <div id="box">
+            <svg></svg>
+        </div>
+        
+        <div class="hidden" id="tooltip">
+            <span id="name"></span>
+            <span id="country"></span>
+            <span id="body"></span>
+        </div>
+        
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="../javascript/olympians.js"></script>
     </body>
 </html>
