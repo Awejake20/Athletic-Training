@@ -1,0 +1,53 @@
+#p1,#p2,#scatter,#box
+{
+    float: right;
+}
+
+#events
+{
+    width: 100;
+    background-color: #da7655;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+    float: left;
+}
+
+#category
+{
+    width: 100;
+    height: 120;
+    background-color: #da7655;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+    float: left;
+}
+
+button
+{
+    width: 100;
+    height: 40;
+}
+
+body
+{
+    background-color: snow;
+}
+
+*
+{
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+h1,h2
+{
+    font-style: italic;
+}
+
+h1
+{
+    text-align: center;
+}
+

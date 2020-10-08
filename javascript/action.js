@@ -508,7 +508,7 @@ var initGraph = function(olympians,event)
                         return runner.Event == event
                     })
     
-    var screen = {width:1000,height:500}
+    var screen = {width:650,height:400}
     var margins = {left:100,right:100,top:50,bottom:100}
     var graph = 
         {

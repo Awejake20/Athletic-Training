@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <link href="../css/action.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <h1>
+            The Optimal Body Type of Male Olympic Runners
+        </h1>
+        <h2>
+            Why do we care?
+        </h2>
+        <p>
+            Being one of the oldest sports in the world, track and field has millions of fans around the world, some of those including people interested in competing, or those interested in studing the sport from a kinesiology standpoint. For people interested in competing, they may be discouraged if they think their body type doesn't align with their preconcieved notions of what a track runner should look like. For the coaches, trainers, scientists, and others out there studying the sport, they might be interested to see any trends in the heights and weights of Olympic athletes, so they may be able to apply this information to their athletes or themselves.
+        </p>
+        <h2>
+            What does our data tell us?
+        </h2>
+        
+        <div id="p1">
+                <div id="category">
+                <button id="height">Height</button>
+                <button id="weight">Weight</button>
+                <button id="ratio">Weight/Height Ratio</button>
+            </div>
+            <div id="box">
+                <svg></svg>
+            </div>
+        </div>
+        
+        <p>
+            The first thing we might want to look for is how the heights of the runners change as a function of event distance. As we can see from the box and whiskers plot--where the middle of the box represents the mean, the edges of the box are one standard deviation from the mean, and the whiskers coming out of the box point to the maximum and minimum values--there is plenty of overlap in the boxes from each event. Thus, we cannot make any conclusion that the heights of the runners differ between events. So whether you're 7'0" or 5'0", you shouldn't have trouble competing in any event. To contrast, when we look at the weight and weight/height ratio data, we start to see the values fall off once we move past the sprinting events. Since the standard deviations do not overlap between the sprinting events and the longer distance events, we can say that there is a negative correlation between the weight of the runners and the distance they run, as well as the weight/height ratio of the runners and the distance they run. Keep in mind that this is only correlation, not causation. You could fing many people in the world with the same weight/height ratio as Usain Bolt, but that doesn't mean they can go out and run a 9.69 second 100M dash. The trend is most likely due to difference in training styles between events. Where sprinters recruit more fast twitch muscle fibers and therefore need more muscle mass, distance runners require more oxygen efficient metobolism in their muscles, and added mass might slow them down over long distances. 
+        </p>
+        
+        <h2>
+            What doesn't our data tell us?
+        </h2>
+        
+        <div id="p1">
+            <div id="events">
+                <button id="one">100 Meter Dash</button>
+                <button id="two">110 Meter Hurdles</button>
+                <button id="three">200 Meter Dash</button>
+                <button id="four">400 Meter Dash</button>
+                <button id="five">400 Meter Hurdles</button>
+                <button id="six">800 Meter Run</button>
+                <button id="seven">1500 Meter Run</button>
+                <button id="eight">3000 Meter Steeplechase</button>
+                <button id="nine">5000 Meter Run</button>
+                <button id="ten">10000 Meter Run</button>
+            </div>
+            <div id="scatter">
+                <svg></svg>
+            </div>
+        </div>
+        
+        <p>
+            If we are looking to find the optimal body type for each event, we must then look at the weight/height ratios of the runners as a function of the times that they run in the event. To make a conclusion, we must see the data converge to a certain value as the time decreases. However, what we see in the scatter plots is more or less nebulous data, rather than converging data. Thus, we are unable to conclude that a certain weight/height ratio is optimal since we don't see the data points converge as the times get faster. Perhaps if we had more data from a wider range of performance times, we might be able to make a conclusion then. In that case, we would probably see a higher variance in the ratios as the times got slower, which would then make the data more clearly converge as the times got faster. However, given the data present, we cannot make this conclusion.
+        </p>
+        
+        <h2>What does this mean for athletes?
+        </h2>
+        
+        <p>Based on our conclusions, the event an athlete runs or wants to run  should affect their training plans, more specifically how they want their training to affect their weight/height ratio. For distance runners, this could mean possibly slimming down, and for sprinters, this could mean more weight training and a higher calorie diet. However, they should not be worried if their height, weight, or ratio is slightly different than others competing in the same event, as we were unable to conclude that this makes a difference.
+        </p>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="../javascript/action.js"></script>
+    </body>
+</html>

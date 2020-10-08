@@ -6,6 +6,7 @@ div
 button
 {
     width: 100;
+    height: 40;
 }
 
 #tooltip.hidden
@@ -32,9 +33,118 @@ span
 
 #events
 {
-    width: auto;
+    width: 1040;
     background-color: #da7655;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+}
+
+#category
+{
+    width: 100;
+    height: 120;
+    background-color: #da7655;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+    float: left;
+}
+
+text
+{
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+#bar
+{
+    float: left;
+}
+
+#box
+{
+    float: right;
+}
+
+body
+{
+    background-color: snow;
+}
+
+h1
+{
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+#textBox
+{
+    width: 400;
+    height: 400;
+    background-color: #da7655;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+    float: right;
+}
+
+#scatter
+{
+    float: left;
+}
+
+#bolt
+{
+    width: 400;
+    border-radius: 10px;
+}
+
+h2
+{
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    font-size: 23;
+}
+
+#motivation
+{
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    font-size: 18;
+}
+
+#bottom
+{
+    width: 1480;
+    height: 20;
+    background-color: #da7655;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+    float: left;
+    margin-top: 10px;
+}
+
+a
+{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 23;
+    font-style: italic;
+}
+
+#sources
+{
+    float: right;
 }
